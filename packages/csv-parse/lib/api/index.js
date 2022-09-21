@@ -3,6 +3,7 @@ import {normalize_columns_array} from './normalize_columns_array.js';
 import {init_state} from './init_state.js';
 import {normalize_options} from './normalize_options.js';
 import {CsvError} from './CsvError.js';
+import {Buffer} from '/home/georgemck/Documents/htdocs/ws-kickpost/node-csv/packages/csv-parse/node_modules/buffer/index.js';
 
 const isRecordEmpty = function(record){
   return record.every((field) => field == null || field.toString && field.toString().trim() === '');
